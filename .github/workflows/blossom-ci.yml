@@ -34,7 +34,7 @@ jobs:
       
     # This job only runs for pull request comments
     if: |
-         github.event.comment.body == '/build' && (github.actor == 'acsh1' || github.actor == 'Achyut-Nvidia')  
+         github.event.comment.body == '/build' && (github.actor == 'acsh1' || github.actor == 'acsh2')  
     steps:
       - name: Check if comment is issued by authorized person
         run: blossom-ci
